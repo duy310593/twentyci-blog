@@ -13,7 +13,7 @@
                     <div class="account-wrap">
                         <div class="account-item clearfix js-item-menu">
                             <div class="content">
-                                <a class="/js-acc-btn" href="#">Duy Pham</a>
+                                <a class="/js-acc-btn" href="#">{{ Auth::user()->name }}</a>
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="account-dropdown__footer">

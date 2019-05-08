@@ -73,4 +73,13 @@ class Post
             'status' => 'required'
         ]);
     }
+
+    /**
+     * Get all publish
+     *
+     * @return PostModel[]|\Illuminate\Database\Eloquent\Collection
+     */
+    public static function getAllPublish() {
+        return PostModel::where('status', 1)->get();
+    }
 }

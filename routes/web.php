@@ -1,10 +1,12 @@
 <?php
+use App\Services\Post as PostService;
 
 /* === FRONTEND === */
 
 /* Home */
 Route::get('/', function () {
-    return view('welcome');
+    $posts = PostService::getAll();
+    return view('home2', ['posts' => $posts]);
 });
 
 /* === BACKEND === */
